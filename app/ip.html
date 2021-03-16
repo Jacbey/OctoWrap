@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Set IP</title>
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <script type="text/javascript" src="./ip.js"></script>
+</head>
+<body style="background: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+    IP Address
+    <br>
+    <script>document.write('<input type="text" id="ip" value="'+settings.ip+'">');</script><button type="submit" onclick="setIP()">Save</button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "octowrap",
+  "version": "1.0.0",
+  "description": "Wrapper for OctoPrint",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^12.0.1",
+    "electron-builder": "^22.10.5",
+    "electron-builder-squirrel-windows": "^22.10.5"
+  },
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "JazMP",
+  "license": "ISC",
+  "build": {
+    "appId": "octowrap",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "octoprint.ico"
+    },
+    "extraFiles": [
+      "octowrap-settings.json"
+    ]
+  }
+}
