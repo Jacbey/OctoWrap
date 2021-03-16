@@ -27,6 +27,7 @@ Please recommend stuff to add that might make your life easier.
 - Control HUE lights from the tray
 - Pre-Heat the bed from the tray
 - System notifications for print progress
+- Cortana commands for printer commands
 
 
 ## License
